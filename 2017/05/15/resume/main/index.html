@@ -13,59 +13,44 @@
     
     
     
-    <title>No title | Cobb&#39;s home</title>
+    <title>No title | Jacob&#39;s home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
     <meta name="keywords" content="">
-    <meta name="description" content="body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    /*overflow: hidden;*/
-}
-
-table {
-    width: 100%;
-    /*margin: auto 0;*/
-    text-align: center;
-    /*height: 100%;*/
-    /*line-height: 10">
+    <meta name="description" content="var browserVersion = window.navigator.userAgent.toUpperCase();
+var isOpera = false;
+var isFireFox = false;
+var isChrome = false;
+var isSafari = false;
+var isIE = false;
+//
+function startInit(iframeId,">
 <meta property="og:type" content="article">
 <meta property="og:title" content="No title">
 <meta property="og:url" content="https://xieqiupeng.github.io/2017/05/15/resume/main/index.html">
-<meta property="og:site_name" content="Cobb's home">
-<meta property="og:description" content="body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    /*overflow: hidden;*/
-}
-
-table {
-    width: 100%;
-    /*margin: auto 0;*/
-    text-align: center;
-    /*height: 100%;*/
-    /*line-height: 10">
-<meta property="og:updated_time" content="2017-05-15T03:09:21.778Z">
+<meta property="og:site_name" content="Jacob's home">
+<meta property="og:description" content="var browserVersion = window.navigator.userAgent.toUpperCase();
+var isOpera = false;
+var isFireFox = false;
+var isChrome = false;
+var isSafari = false;
+var isIE = false;
+//
+function startInit(iframeId,">
+<meta property="og:updated_time" content="2017-05-15T01:02:02.861Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="No title">
-<meta name="twitter:description" content="body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    /*overflow: hidden;*/
-}
-
-table {
-    width: 100%;
-    /*margin: auto 0;*/
-    text-align: center;
-    /*height: 100%;*/
-    /*line-height: 10">
+<meta name="twitter:description" content="var browserVersion = window.navigator.userAgent.toUpperCase();
+var isOpera = false;
+var isFireFox = false;
+var isChrome = false;
+var isSafari = false;
+var isIE = false;
+//
+function startInit(iframeId,">
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
@@ -86,7 +71,7 @@ table {
           <img src="/img/avatar.jpg">
         </a>
         <hgroup class="introduce">
-          <h5 class="nickname">xieqiupeng</h5>
+          <h5 class="nickname">Jacob</h5>
           <a href="mailto:634206017@qq.com" title="634206017@qq.com" class="mail">634206017@qq.com</a>
         </hgroup>
       </div>
@@ -179,7 +164,7 @@ table {
         <h1 class="title"></h1>
         <h5 class="subtitle">
             
-                <time datetime="2017-05-15T03:12:04.956Z" itemprop="datePublished" class="page-time">
+                <time datetime="2017-05-15T03:12:04.957Z" itemprop="datePublished" class="page-time">
   2017-05-15
 </time>
 
@@ -202,7 +187,7 @@ table {
     <div class="post-card">
         <h1 class="post-card-title"></h1>
         <div class="post-meta">
-            <time class="post-time" title="2017-05-15 11:12:04" datetime="2017-05-15T03:12:04.956Z"  itemprop="datePublished">2017-05-15</time>
+            <time class="post-time" title="2017-05-15 11:12:04" datetime="2017-05-15T03:12:04.957Z"  itemprop="datePublished">2017-05-15</time>
 
             
 
@@ -217,50 +202,51 @@ table {
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    /*overflow: hidden;*/
+            var browserVersion = window.navigator.userAgent.toUpperCase();
+var isOpera = false;
+var isFireFox = false;
+var isChrome = false;
+var isSafari = false;
+var isIE = false;
+//
+function startInit(iframeId, minHeight) {
+    isOpera = browserVersion.indexOf("OPERA") > -1 ? true : false;
+    isFireFox = browserVersion.indexOf("FIREFOX") > -1 ? true : false;
+    isChrome = browserVersion.indexOf("CHROME") > -1 ? true : false;
+    isSafari = browserVersion.indexOf("SAFARI") > -1 ? true : false;
+    if (!!window.ActiveXObject || "ActiveXObject" in window) {
+        isIE = true;
+    }
+    window.setInterval("reinitIframe('" + iframeId + "'," + minHeight + ")", 100);
 }
-
-table {
-    width: 100%;
-    /*margin: auto 0;*/
-    text-align: center;
-    /*height: 100%;*/
-    /*line-height: 100%;*/
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    list-style: none;
-}
-
-ol {
-    margin: 0;
-    padding: 0;
-    text-align: left;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.big {
-    font-size: 22px;
-    padding: 2px;
-}
-
-#edge {
-    /*31.8mm*/
-    margin-left: 7.57%;
-    /*31.8mm*/
-    margin-right: 7.57%;
-    /*25.4mm;*/
-    margin-top: 8.55%;
+//
+function reinitIframe(iframeId, minHeight) {
+    try {
+        var iframe = document.getElementById(iframeId);
+        var bHeight = 0;
+        if (isChrome == false && isSafari == false) {
+            bHeight = iframe.contentWindow.document.body.scrollHeight;
+        }
+        var dHeight = 0;
+        if (isFireFox == true) {
+            dHeight = iframe.contentWindow.document.documentElement.offsetHeight + 2;
+        }
+        else if (isIE == false && isOpera == false) {
+            dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
+        }
+        else if (isIE == true && !-[1,] == false) {
+        }
+        //ie9+
+        else {
+            bHeight += 3;
+        }
+        var height = Math.max(bHeight, dHeight);
+        if (height < minHeight) {
+            height = minHeight;
+        }
+        iframe.style.height = height + "px";
+    } catch (ex) {
+    }
 }
         </div>
 
@@ -268,7 +254,7 @@ ol {
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-05-15T03:09:21.778Z" itemprop="dateUpdated">2017-05-15 11:09:21</time>
+    最后更新时间：<time datetime="2017-05-15T01:02:02.861Z" itemprop="dateUpdated">2017-05-15 09:02:02</time>
 </span><br>
 
 
@@ -278,8 +264,8 @@ ol {
     </div>
     <footer>
         <a href="https://xieqiupeng.github.io">
-            <img src="/img/avatar.jpg" alt="xieqiupeng">
-            xieqiupeng
+            <img src="/img/avatar.jpg" alt="Jacob">
+            Jacob
         </a>
     </footer>
 </blockquote>
@@ -301,7 +287,7 @@ ol {
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://xieqiupeng.github.io/2017/05/15/resume/main/&title=Cobb's home&pic=https://xieqiupeng.github.io/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://xieqiupeng.github.io/2017/05/15/resume/main/&title=Jacob's home&pic=https://xieqiupeng.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -311,7 +297,7 @@ ol {
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xieqiupeng.github.io/2017/05/15/resume/main/&title=Cobb's home&source=thinking aloud." data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xieqiupeng.github.io/2017/05/15/resume/main/&title=Jacob's home&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -321,7 +307,7 @@ ol {
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=Cobb's home&url=https://xieqiupeng.github.io/2017/05/15/resume/main/&via=https://xieqiupeng.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=Jacob's home&url=https://xieqiupeng.github.io/2017/05/15/resume/main/&via=https://xieqiupeng.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
@@ -349,7 +335,7 @@ ol {
 <nav class="post-nav flex-row flex-justify-between">
   
     <div class="waves-block waves-effect prev">
-      <a href="/2017/05/15/resume/main/" id="post-prev" class="post-nav-link">
+      <a href="/2017/05/16/resume/main/" id="post-prev" class="post-nav-link">
         <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
         <h4 class="title">[no title]</h4>
       </a>
@@ -436,7 +422,7 @@ ol {
     <div class="bottom">
         <p>
             <span>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></span>
-            <span>xieqiupeng &copy; 2015 - 2017</span>
+            <span>Jacob &copy; 2015 - 2017</span>
         </p>
     </div>
 </footer>
@@ -450,7 +436,7 @@ ol {
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://xieqiupeng.github.io/2017/05/15/resume/main/&title=《No title》 — Cobb's home&pic=https://xieqiupeng.github.io/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://xieqiupeng.github.io/2017/05/15/resume/main/&title=《No title》 — Jacob's home&pic=https://xieqiupeng.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -460,7 +446,7 @@ ol {
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xieqiupeng.github.io/2017/05/15/resume/main/&title=《No title》 — Cobb's home&source=thinking aloud." data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xieqiupeng.github.io/2017/05/15/resume/main/&title=《No title》 — Jacob's home&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -470,7 +456,7 @@ ol {
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《No title》 — Cobb's home&url=https://xieqiupeng.github.io/2017/05/15/resume/main/&via=https://xieqiupeng.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《No title》 — Jacob's home&url=https://xieqiupeng.github.io/2017/05/15/resume/main/&via=https://xieqiupeng.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
