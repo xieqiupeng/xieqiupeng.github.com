@@ -20,37 +20,57 @@
     
     
     <meta name="keywords" content="">
-    <meta name="description" content="var browserVersion = window.navigator.userAgent.toUpperCase();
-var isOpera = false;
-var isFireFox = false;
-var isChrome = false;
-var isSafari = false;
-var isIE = false;
-//
-function startInit(iframeId,">
+    <meta name="description" content="brief 
+    
+    
+    
+    
+    
+        .title {
+            width: 100%;
+            border: solid 0 red;
+            display: flex;
+        }
+
+        .title ul {
+            flex: 1;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="No title">
-<meta property="og:url" content="https://xieqiupeng.github.io/2017/05/15/resume/main/index.html">
+<meta property="og:url" content="https://xieqiupeng.github.io/2017/05/29/resume/brief/index.html">
 <meta property="og:site_name" content="Jacob's home">
-<meta property="og:description" content="var browserVersion = window.navigator.userAgent.toUpperCase();
-var isOpera = false;
-var isFireFox = false;
-var isChrome = false;
-var isSafari = false;
-var isIE = false;
-//
-function startInit(iframeId,">
-<meta property="og:updated_time" content="2017-05-15T01:02:02.861Z">
+<meta property="og:description" content="brief 
+    
+    
+    
+    
+    
+        .title {
+            width: 100%;
+            border: solid 0 red;
+            display: flex;
+        }
+
+        .title ul {
+            flex: 1;">
+<meta property="og:image" content="https://xieqiupeng.github.io/avatar.jpg">
+<meta property="og:updated_time" content="2017-05-29T07:26:12.132Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="No title">
-<meta name="twitter:description" content="var browserVersion = window.navigator.userAgent.toUpperCase();
-var isOpera = false;
-var isFireFox = false;
-var isChrome = false;
-var isSafari = false;
-var isIE = false;
-//
-function startInit(iframeId,">
+<meta name="twitter:description" content="brief 
+    
+    
+    
+    
+    
+        .title {
+            width: 100%;
+            border: solid 0 red;
+            display: flex;
+        }
+
+        .title ul {
+            flex: 1;">
+<meta name="twitter:image" content="https://xieqiupeng.github.io/avatar.jpg">
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
@@ -164,8 +184,8 @@ function startInit(iframeId,">
         <h1 class="title">No title</h1>
         <h5 class="subtitle">
             
-                <time datetime="2017-05-15T03:12:04.957Z" itemprop="datePublished" class="page-time">
-  2017-05-15
+                <time datetime="2017-05-29T07:26:12.131Z" itemprop="datePublished" class="page-time">
+  2017-05-29
 </time>
 
 
@@ -181,13 +201,13 @@ function startInit(iframeId,">
 
 <div class="container body-wrap">
     
-<article id="post-resume/main"
+<article id="post-resume/brief"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
         <h1 class="post-card-title">No title</h1>
         <div class="post-meta">
-            <time class="post-time" title="2017-05-15 11:12:04" datetime="2017-05-15T03:12:04.957Z"  itemprop="datePublished">2017-05-15</time>
+            <time class="post-time" title="2017-05-29 15:26:12" datetime="2017-05-29T07:26:12.131Z"  itemprop="datePublished">2017-05-29</time>
 
             
 
@@ -202,64 +222,95 @@ function startInit(iframeId,">
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            var browserVersion = window.navigator.userAgent.toUpperCase();
-var isOpera = false;
-var isFireFox = false;
-var isChrome = false;
-var isSafari = false;
-var isIE = false;
-//
-function startInit(iframeId, minHeight) {
-    isOpera = browserVersion.indexOf("OPERA") > -1 ? true : false;
-    isFireFox = browserVersion.indexOf("FIREFOX") > -1 ? true : false;
-    isChrome = browserVersion.indexOf("CHROME") > -1 ? true : false;
-    isSafari = browserVersion.indexOf("SAFARI") > -1 ? true : false;
-    if (!!window.ActiveXObject || "ActiveXObject" in window) {
-        isIE = true;
-    }
-    window.setInterval("reinitIframe('" + iframeId + "'," + minHeight + ")", 100);
-}
-//
-function reinitIframe(iframeId, minHeight) {
-    try {
-        var iframe = document.getElementById(iframeId);
-        var bHeight = 0;
-        if (isChrome == false && isSafari == false) {
-            bHeight = iframe.contentWindow.document.body.scrollHeight;
+            <html>
+<head>
+    <title> brief </title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <base target="_blank">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <script src="" type="text/javascript"></script>
+    <style type="text/css">
+        .title {
+            width: 100%;
+            border: solid 0 red;
+            display: flex;
         }
-        var dHeight = 0;
-        if (isFireFox == true) {
-            dHeight = iframe.contentWindow.document.documentElement.offsetHeight + 2;
+
+        .title ul {
+            flex: 1;
         }
-        else if (isIE == false && isOpera == false) {
-            dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
+
+        .title img {
+            width: 100px;
+            height: 124px;
         }
-        else if (isIE == true && !-[1,] == false) {
+
+        .jobs {
+            margin-left: 30px;
         }
-        //ie9+
-        else {
-            bHeight += 3;
-        }
-        var height = Math.max(bHeight, dHeight);
-        if (height < minHeight) {
-            height = minHeight;
-        }
-        iframe.style.height = height + "px";
-    } catch (ex) {
-    }
-}
+    </style>
+    <script type="text/javascript"></script>
+</head>
+
+<body>
+<div id="edge">
+    <div class="title">
+        <ul class="information">
+            <li class="bold big">谢 秋 鹏</li>
+            <li>现离职 | 北京市宣武区 | 男 | 19910708</li>
+            <li>学历 : 本 科 | 北京工商大学 | 软件工程专业</li>
+            <li>手机 : 18801491463</li>
+            <li>邮箱 : 654104254@qq.com</li>
+            <li>Github :
+                <a href="https://github.com/xieqiupeng" target="_blank" rel="external">
+                    https://github.com/xieqiupeng
+                </a>
+            </li>
+            <li>个人主页：
+                <a href="https://github.com/xieqiupeng/xieqiupeng.github.io" target="_blank" rel="external">
+                    https://xieqiupeng.github.io/
+                </a>
+            </li>
+            <li>H5版简历下载地址：
+                <a href="http://pan.baidu.com/s/1kU8kO8v" target="_blank" rel="external">
+                    http://pan.baidu.com/s/1kU8kO8v
+                </a>
+            </li>
+            <li>知乎 :
+                <a href="https://www.zhihu.com/people/xie­qiu­peng­12" target="_blank" rel="external">
+                    https://www.zhihu.com/people/xie­qiu­peng­12
+                </a>
+            </li>
+        </ul>
+        <img src="avatar.jpg">
+    </div>
+    <br>
+    <span class="bold">职业意向：</span>
+    <ol class="jobs">
+        <li>Android开发工程师</li>
+        <li>AndroidFrameWork开发工程师</li>
+        <!--<li>ReactNative(Android)开发工程师</li>-->
+        <li>Java开发工程师</li>
+        <!--<li>前端&JavaScript开发工程师</li>-->
+        <!--<li>PHP开发工程师</li>-->
+        <li>测试工程师</li>
+        <li>全栈工程师</li>
+    </ol>
+</div>
+</body>
+</html>
         </div>
 
         <blockquote class="post-copyright">
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-05-15T01:02:02.861Z" itemprop="dateUpdated">2017-05-15 09:02:02</time>
+    最后更新时间：<time datetime="2017-05-29T07:26:12.132Z" itemprop="dateUpdated">2017-05-29 15:26:12</time>
 </span><br>
 
 
         
-        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/05/15/resume/main/" target="_blank" rel="external">https://xieqiupeng.github.io/2017/05/15/resume/main/</a>
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/05/29/resume/brief/" target="_blank" rel="external">https://xieqiupeng.github.io/2017/05/29/resume/brief/</a>
         
     </div>
     <footer>
@@ -287,7 +338,7 @@ function reinitIframe(iframeId, minHeight) {
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://xieqiupeng.github.io/2017/05/15/resume/main/&title=《No title》 — Jacob's home&pic=https://xieqiupeng.github.io/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://xieqiupeng.github.io/2017/05/29/resume/brief/&title=《No title》 — Jacob's home&pic=https://xieqiupeng.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -297,22 +348,22 @@ function reinitIframe(iframeId, minHeight) {
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xieqiupeng.github.io/2017/05/15/resume/main/&title=《No title》 — Jacob's home&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xieqiupeng.github.io/2017/05/29/resume/brief/&title=《No title》 — Jacob's home&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://xieqiupeng.github.io/2017/05/15/resume/main/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://xieqiupeng.github.io/2017/05/29/resume/brief/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《No title》 — Jacob's home&url=https://xieqiupeng.github.io/2017/05/15/resume/main/&via=https://xieqiupeng.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《No title》 — Jacob's home&url=https://xieqiupeng.github.io/2017/05/29/resume/brief/&via=https://xieqiupeng.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://xieqiupeng.github.io/2017/05/15/resume/main/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://xieqiupeng.github.io/2017/05/29/resume/brief/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -335,7 +386,7 @@ function reinitIframe(iframeId, minHeight) {
 <nav class="post-nav flex-row flex-justify-between">
   
     <div class="waves-block waves-effect prev">
-      <a href="/2017/05/21/resume/skills/" id="post-prev" class="post-nav-link">
+      <a href="/2017/05/29/resume/university/" id="post-prev" class="post-nav-link">
         <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
         <h4 class="title">No title</h4>
       </a>
@@ -344,9 +395,9 @@ function reinitIframe(iframeId, minHeight) {
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2017/03/16/Dagger2使用入门/" id="post-next" class="post-nav-link">
+      <a href="/2017/05/29/resume/experience/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">Dagger2使用入门</h4>
+        <h4 class="title">No title</h4>
       </a>
     </div>
   
@@ -436,7 +487,7 @@ function reinitIframe(iframeId, minHeight) {
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://xieqiupeng.github.io/2017/05/15/resume/main/&title=《No title》 — Jacob's home&pic=https://xieqiupeng.github.io/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://xieqiupeng.github.io/2017/05/29/resume/brief/&title=《No title》 — Jacob's home&pic=https://xieqiupeng.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -446,22 +497,22 @@ function reinitIframe(iframeId, minHeight) {
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xieqiupeng.github.io/2017/05/15/resume/main/&title=《No title》 — Jacob's home&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xieqiupeng.github.io/2017/05/29/resume/brief/&title=《No title》 — Jacob's home&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://xieqiupeng.github.io/2017/05/15/resume/main/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://xieqiupeng.github.io/2017/05/29/resume/brief/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《No title》 — Jacob's home&url=https://xieqiupeng.github.io/2017/05/15/resume/main/&via=https://xieqiupeng.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《No title》 — Jacob's home&url=https://xieqiupeng.github.io/2017/05/29/resume/brief/&via=https://xieqiupeng.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://xieqiupeng.github.io/2017/05/15/resume/main/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://xieqiupeng.github.io/2017/05/29/resume/brief/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -472,7 +523,7 @@ function reinitIframe(iframeId, minHeight) {
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://xieqiupeng.github.io/2017/05/15/resume/main/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://xieqiupeng.github.io/2017/05/29/resume/brief/" alt="微信分享二维码">
 </div>
 
 
